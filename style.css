@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: aquamarine;
+}
+
+/* header logo styling */
+.logo {
+  text-align: center;
+  margin: 20px;
+  background-color: gray;
+  padding: 20px;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 28px;
+  font-weight: 900;
+}
+.logo::before,
+.logo::after {
+  content: "📝";
+  margin-right: 10px;
+}
+/* logo styling ends */
+/* to do container styling */
+.container {
+  width: 50vw;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(235, 235, 66, 0.874);
+  border-radius: 10px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.to_do-search {
+  margin: 30px auto;
+  width: 60%;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 5px rgba(67, 66, 69, 0.5);
+  border-radius: 50px;
+  height: 50px;
+}
+.to_do-search [type="text"] {
+  /* background-color: gray; */
+  border-radius: 50px;
+  padding: 0 10px;
+  width: 400px;
+  font-size: 20px;
+  cursor: grab;
+}
+.to_do-search button {
+  background-color: rgb(247, 24, 24);
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 0 40px;
+  width: 150px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.to_do-search [type="text"],
+button {
+  border: none;
+  outline: none;
+}
+.to_do-data {
+  width: 70%;
+  justify-self: center;
+  margin-bottom: 30px;
+}
+.to_do-data ul {
+  list-style: none;
+  margin-left: 30px;
+}
+.to_do-data ul li {
+  padding: 20px;
+  margin-bottom: 8px;
+  border-radius: 50px;
+  background-color: rgb(160, 157, 157);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+
+  font-size: 20px;
+}
+
+#list-data li {
+  overflow: scroll;
+  scrollbar-width: none;
+  cursor: pointer;
+}
+
+.checked::before {
+  content: "✔️";
+  margin-right: 10px;
+}
+
+span {
+  cursor: pointer;
+  position: absolute;
+  right: 150px;
+}
